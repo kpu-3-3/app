@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SmartPillbox</string>
+    <string name="pill_name">약종류를 선택하세요</string>
+    <string name="Taking_Count">복욕 개수를 선택하세요</string>
+
+    <string-array name="pill_array">
+        <item>감기약</item>
+        <item>소화기계약</item>
+        <item>해열,진통,소염제</item>
+        <item>영양제</item>
+        <item>피부 비뇨 생식기약</item>
+        <item>연고류</item>
+        <item>외용제</item>
+        <item>안.이.비.치과약</item>
+        <item>신경정신과</item>
+        <item>구충약</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="Taking_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+</resources>

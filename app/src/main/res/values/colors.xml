@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2699FB</color>
+    <color name="colorPrimaryDark">#2699FB</color>
+    <color name="registerButton">#3F96C1</color>
+    <color name="registerInputText">#BCE0FD</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="registerBackground">#F1F9FF</color>
+    <color name="GREY">#b8babc</color>
+    <color name="RED">#e53434</color>
+    <color name="DarkGreen">#006064</color>
+    <color name="duskYellow">#f7d116</color>
+    <color name="BLACK">#000000</color> <!-- 검정색 -->
+</resources>

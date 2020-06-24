@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item>감기</item>
+        <item>소화기</item>
+        <item>해열.진통.소염제</item>
+        <item>영양제</item>
+        <item>피부 비뇨 생식기</item>
+        <item>연고</item>
+        <item>외용제</item>
+        <item>안.이.비.치과</item>
+        <item>신경정신</item>
+        <item>시약</item>
+        <item>구충</item>
+        <item>한약</item>
+        <item>기타</item>
+
+    </string-array>
+</resources>

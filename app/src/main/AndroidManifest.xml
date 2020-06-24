@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartpillbox3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 인터넷에 관련된 권한들 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- 블루투스 권한 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".usermedi_item"></activity>
+        <activity android:name=".IntakehistoryActivity" />
+        <activity android:name=".CheckmediSettingActivity" />
+        <activity android:name=".MypageMainActivity" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".MedicineApiActivity" />
+        <activity android:name=".midimenu" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SearchPairing" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Bluetooth" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".board" />
+        <activity android:name=".TakingMedicineInfo" />
+        <activity android:name=".board_write" />
+    </application>
+
+</manifest>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/registerBackground"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/registerBackscreen"
+        android:layout_width="323dp"
+        android:layout_height="569dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/screen_background_light" />
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:fontFamily="@font/netmarble"
+        android:hint="ID"
+        android:colorControlActivated="@color/colorPrimary"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/registerInputText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="@font/netmarble"
+        android:hint="Full Name"
+        android:colorControlActivated="@color/colorPrimary"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/registerInputText"
+        app:layout_constraintEnd_toEndOf="@+id/passwordText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <EditText
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="@font/netmarble"
+        android:hint="Age"
+        android:colorControlActivated="@color/colorPrimary"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/registerInputText"
+        app:layout_constraintEnd_toEndOf="@+id/nameText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nameText"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="@font/netmarble"
+        android:hint="E-mail"
+        android:colorControlActivated="@color/colorPrimary"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/registerInputText"
+        app:layout_constraintEnd_toEndOf="@+id/ageText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ageText"
+        app:layout_constraintTop_toBottomOf="@+id/ageText" />
+
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:fontFamily="@font/netmarble"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/registerInputText"
+        app:layout_constraintEnd_toEndOf="@+id/idText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idText"
+        app:layout_constraintTop_toBottomOf="@+id/idText" />
+
+
+    <RadioGroup
+        android:id="@+id/genderGroup"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/netmarble"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/emailText"
+        app:layout_constraintStart_toStartOf="@+id/emailText"
+        app:layout_constraintTop_toBottomOf="@+id/emailText">
+
+        <RadioButton
+            android:id="@+id/genderMan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="230dp"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/netmarble"
+            android:text="남성"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/registerBackscreen"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.678" />
+
+        <RadioButton
+            android:id="@+id/genderWomen"
+            android:layout_width="76dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="99dp"
+            android:layout_marginEnd="210dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:fontFamily="@font/netmarble"
+            android:text="여성"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/registerBackscreen"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.678" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/netmarble"
+        android:text="회원가입"
+        android:background="@color/registerButton"
+        app:layout_constraintEnd_toEndOf="@+id/genderGroup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/genderGroup"
+        app:layout_constraintTop_toBottomOf="@+id/genderGroup" />
+
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/netmarble"
+        android:text="회원가입"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/registerBackscreen"
+        app:layout_constraintEnd_toStartOf="@+id/registerBackscreen"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/registerBackscreen"
+        app:layout_constraintTop_toBottomOf="@+id/registerBackscreen"
+        app:layout_constraintVertical_bias="0.921" />
+
+    <TextView
+        android:id="@+id/registerLaw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/netmarble"
+        android:text="By creating an account you agree to our \n     Terms of Service and Privacy Policy"
+        android:textColor="@color/colorPrimary"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/registerBackscreen"
+        app:layout_constraintEnd_toStartOf="@+id/registerBackscreen"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toEndOf="@+id/registerBackscreen"
+        app:layout_constraintTop_toBottomOf="@+id/registerBackscreen"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <ImageView
+        android:id="@+id/_profileTitle"
+        android:layout_width="52dp"
+        android:layout_height="43dp"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/_profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:titleTextColor="#fff"
+        android:id="@+id/app_toolbar"
+        android:background="@color/colorPrimary"
+        app:title="약 검색하기"
+        app:fontFamily="@font/netmarble"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="20dp">
+
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="261dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/ic_search2"
+            android:drawableLeft="@drawable/ic_search2"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/netmarble"
+            android:hint="약 이름 또는 회사이름을 입력해주세요"
+            android:padding="4dp"
+            android:textColor="@color/GREY"
+            android:textColorHint="@color/GREY"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:text="검색"
+            android:fontFamily="@font/netmarble"
+            android:textSize="14sp"
+            android:onClick="mOnClick"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="453dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/netmarble"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:baselineAligned="false"
+            android:fontFamily="@font/netmarble"
+            android:onClick="mOnClick"
+            android:text="이전 페이지"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:baselineAligned="false"
+            android:fontFamily="@font/netmarble"
+            android:onClick="mOnClick"
+            android:text="다음 페이지"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

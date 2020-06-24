@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="title"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:fontFamily="@font/netmarble"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/Text4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/netmarble"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="  카테고리: "
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/categoryText"
+            android:layout_width="89dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/netmarble"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="category"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/netmarble"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="  약 이름: "
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/medicineText"
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/netmarble"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="medicine"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/postNumText"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/netmarble"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/netmarble"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="  작성일: "
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/netmarble"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="2017-01-01"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/Text3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/netmarble"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="  작성자: "
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/userIDText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/netmarble"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="userID"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contentText"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:text="content"
+            android:textSize="20dp"
+            android:fontFamily="@font/netmarble"
+            android:textColor="#000000"
+            android:background="@drawable/border"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/commentText"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/netmarble"
+                android:hint=" 댓글을 작성해주세요"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/commentwritebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="올리기" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/commentListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#4179AF" />
+
+    </LinearLayout>
+</LinearLayout>
